@@ -1,0 +1,108 @@
+body {
+	/* background: linear-gradient(0deg, #282A37, #282A37), url("../../assets/img/bg1.png") left top repeat; */
+	background-color: #282a37;
+	background-image: url('../assets/img/bg1.png');
+	background-repeat: no-repeat;
+	background-position: right top;
+	color: white;
+}
+.form-main {
+	text-align: left;
+	padding: 7%;
+	padding-top: 5%;
+}
+
+.form-head {
+	font-weight: 700;
+	font-size: 52px;
+    
+}
+
+.form {
+	width: 60%;
+}
+
+.form-label{
+    font-weight: 700;
+    font-size: 20px;
+    color: #ca256a;
+}
+.form-content {
+	background-color: #323645;
+	border-radius: 9px;
+	color: white;
+	width: 100%;
+	padding-bottom: 150px;
+	margin: 8px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	border: 1px solid #323645;
+}
+
+.form-input {
+	background-color: #323645;
+	border-radius: 9px;
+	color: white;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	border: 1px solid #323645;
+}
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+::placeholder {
+	color: white;
+}
+
+.form-button {
+	background-color: #ca256a;
+	width: 35%;
+	border-radius: 32px;
+	font-size: 15px;
+	margin: 8px 0;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+	.form {
+		width: 50%;
+	}
+}
+@media (max-width: 1000px) {
+	.form {
+		width: 60%;
+	}
+}
+@media (max-width: 700px) {
+	.form {
+		width: 70%;
+	}
+	.form-head {
+		font-size: 40px;
+	}
+}
+@media (max-width: 500px) {
+	.form {
+		width: 100%;
+	}
+	.form-head {
+		font-size: 30px;
+	}
+}
+@media (max-width: 400px) {
+	.form {
+		width: 100%;
+	}
+	.form-head {
+		font-size: 25px;
+	}
+}
