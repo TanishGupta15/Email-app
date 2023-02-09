@@ -15,7 +15,7 @@ body {
 .form-head {
 	font-weight: 700;
 	font-size: 52px;
-    
+
 }
 
 .form {
@@ -32,6 +32,7 @@ body {
 	border-radius: 9px;
 	color: white;
 	width: 100%;
+	word-break: break-all;
 	padding-bottom: 150px;
 	margin: 8px 0;
 	display: inline-block;

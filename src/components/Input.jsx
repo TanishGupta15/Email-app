@@ -4,7 +4,7 @@ function Input(props) {
     return (
         <div className = "conatiner">
             <div><label className="form-label" >{props.title}</label></div>
-            <div><input type="text" name = {props.name} className = {props.name}/></div>
+            <div><input type="text" value = {props.name} className = {props.Cname}/></div>
         </div>
     )
 }
