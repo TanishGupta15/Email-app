@@ -15,13 +15,13 @@ function handle(){
 let handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    let res = await fetch("http://localhost:3001/", {
+    let res = await fetch("http://localhost:3001", {
       method: "POST",
       headers : {
                'Access-Control-Allow-Origin': '*',
                'Access-Control-Allow-Methods': 'GET, POST',
                'Access-Control-Allow-Headers': 'Content-Type',
-              //  'Content-Type': 'application/json'
+               'Content-Type': 'application/json'
            },
       body: JSON.stringify({
         eventID: eventID,
