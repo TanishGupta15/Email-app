@@ -10,6 +10,7 @@ body {
 	text-align: left;
 	padding: 7%;
 	padding-top: 5%;
+
 }
 
 .form-head {
@@ -38,8 +39,24 @@ body {
 	display: inline-block;
 	box-sizing: border-box;
 	border: 1px solid #323645;
+	resize: vertical;
+}
+.form-content::-webkit-scrollbar-track {
+  background:linear-gradient(45deg, #323645, #323645, #323645, #9D3C72);
+  border-radius: 0px;
 }
 
+/* Handle */
+.form-content::-webkit-scrollbar {
+	width : 0.5em;
+  background: #9D3C72 ;
+  border-radius: 14px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#9D3C72 ;
+}
 .form-input {
 	background-color: #323645;
 	border-radius: 9px;
