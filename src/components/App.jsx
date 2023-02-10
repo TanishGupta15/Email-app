@@ -29,12 +29,11 @@ let handleSubmit = async (e) => {
         emailBody: emailBody,
       }),
     });
-    let resJson = await res.json();
-    if (res.status === 200) {
+    if (res === "ok") {
       setemailSubject("");
       setemailBody("");
       seteventID("");
-      setMessage("User created successfully");
+      setMessage("Sent successfully");
     } else {
       setMessage("Some error occured");
     }
@@ -51,7 +50,7 @@ let handleSubmit = async (e) => {
             </div>
             <div className = "conatiner">
                 <div><label className="form-label" >Email Body</label></div>
-                <div><input type="text" value = {emailBody} className = "form-content" onChange={(e) => setemailBody(e.target.value) } /></div>
+                <div><textarea value = {emailBody} className = "form-content" onChange={(e) => setemailBody(e.target.value) } /></div>
             </div>
             <div className = "conatiner">
                 <div><label className="form-label" >Event ID</label></div>
