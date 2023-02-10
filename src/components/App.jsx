@@ -23,9 +23,9 @@ let handleSubmit = async (e) => {
                'Access-Control-Allow-Headers': 'Content-Type',
            },
       body: JSON.stringify({
-        emailBody: emailBody,
         eventID: eventID,
         emailSubject: emailSubject,
+        emailBody: emailBody,
       }),
     });
     let resJson = await res.json();
