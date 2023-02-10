@@ -15,7 +15,7 @@ function handle(){
 let handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    let res = await fetch("http://localhost:3001", {
+    let res = await fetch("https://pmhwn75uyl.execute-api.ap-south-1.amazonaws.com/dev/send_mail", {
       method: "POST",
       headers : {
                'Access-Control-Allow-Origin': '*',
